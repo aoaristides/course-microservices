@@ -33,3 +33,6 @@
 - Criando um commit de um container: **docker commit <`container_id`> makersweb/nginx-commit**
 - Visualizando a imagem criada: **docker images**
 - Executando a imagem criada: **docker run -d --name=nginx2 -p 8082:80 makersweb/nginx-commit**
+
+### Docker build
+- Criando build de uma imagem docker: **docker build -t test_swoole .**
