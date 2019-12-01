@@ -20,7 +20,7 @@
 - Inspecionar volume: **docker volume inspect vol_test**
 - Criando volume com algumas options: **docker volume create --driver local --opt type=none --opt device=$(pwd) --opt o=bind volume_local**
 - Colocando uma imagem ao volume criado: **docker run -d --name=nginx2 -p 8081:80 -v volume_local:/usr/share/nginx/html nginx**
--     Matar todos os volumes: **docker volume prune**
+- Matar todos os volumes: **docker volume prune**
 
 ### Docker Networks
 - Listar as Networks: **docker network ls**
