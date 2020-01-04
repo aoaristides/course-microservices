@@ -36,3 +36,12 @@
 
 ### Docker build
 - Criando build de uma imagem docker: **docker build -t test_swoole .**
+
+### Docker removendo todas as imagens
+- Remove todas as imagens de uma vez: **docker rmi $(docker images -aq) -f**
+
+### Docker removendo todos os containers
+- Remove todos os containers de uma vez: **docker rm $(docker ps -aq) -f**
+
+### Criando um container a partir de uma imagem criada
+- Cria um container a partir de uma imagem: **docker run -d --name laravel -v $(pwd):/var/www -p 8000:8000 makersweb/laravel**
